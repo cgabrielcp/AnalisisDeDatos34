@@ -54,3 +54,15 @@
    ```bash
 
    docker build --no-cache -t jupyter_notebook .
+
+3. Listar las imagenes
+
+    ```bash
+
+   docker images
+
+4. Ejecutar o levantar el contenedor
+
+    ```bash
+
+   docker run -d -p 8080:8888 --name jupyter jupyter_notebook
