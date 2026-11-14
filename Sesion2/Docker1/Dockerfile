@@ -16,8 +16,8 @@ RUN mkdir -p /root/.jupyter
 # Dehsabilitar la autenticacion por token y contraseña
 # Evitar que se abra el navegador automaticamente al iniciar Jupyter Notebook
 # Permitir que Jupyter Notebook se ejecute como root dentro del contenedor
-RUN echo "c.Notebook.Token = ''" >> /root/.jupyter/jupyter_notebook_config.py && \
-    echo "c.Notebook.paswoord = ''" >> /root/.jupyter/jupyter_notebook_config.py && \
+RUN echo "c.Notebook.token = ''" >> /root/.jupyter/jupyter_notebook_config.py && \
+    echo "c.Notebook.password = ''" >> /root/.jupyter/jupyter_notebook_config.py && \
     echo "c.Notebook.open_browser = False" >> /root/.jupyter/jupyter_notebook_config.py && \
     echo "c.Notebook.allow_root = True" >> /root/.jupyter/jupyter_notebook_config.py
 

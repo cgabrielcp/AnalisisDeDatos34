@@ -58,7 +58,6 @@
 3. Listar las imagenes
 
     ```bash
-
    docker images
 
 4. Ejecutar o levantar el contenedor
@@ -66,3 +65,16 @@
     ```bash
 
    docker run -d -p 8080:8888 --name jupyter jupyter_notebook
+
+5. Listar los contenedores 
+
+    ```bash
+
+   docker ps
+
+6. Comandos adicionales
+    ```bash
+
+   docker rm -f jupyter # Detener Contenedor
+   docker rmi -f caad8d46dbc6 # Detener Imagen
+   docker logs -f jupyter # ver status de un contenedor
